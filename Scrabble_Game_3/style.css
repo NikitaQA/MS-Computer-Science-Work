@@ -1,0 +1,48 @@
+/*
+Student Info: Name=Patil Nikita Vilas, ID=12541
+Subject: CS557B_HW4_Summer_2015
+Author: Milind
+Filename: style.css
+Date and Time: Aug 9, 2015 10:32:56 PM
+Project Name: CS557B_HW4_Nikita_Patil_12541
+*/
+/* 
+    Created on : Aug 9, 2015, 10:32:56 PM
+    Author     : Milind
+*/
+
+#image{width:350px;
+      height:100px}
+
+#mydiv1{display:inline-block;
+       width:50px;
+       height:50px;
+       border:1px solid #d3d3d3}
+
+#mydiv2{display:inline-block;
+       width:50px;
+       height:50px;
+       border:1px solid #d3d3d3}
+
+#mydiv3{display:inline-block;
+       width:50px;
+       height:50px;
+       border:1px solid #d3d3d3}
+
+#mydiv4{display:inline-block;
+       width:50px;
+       height:50px;
+       border:1px solid #d3d3d3}
+
+#mydiv5{display:inline-block;
+       width:50px;
+       height:50px;
+       border:1px solid #d3d3d3}
+
+#timdiv{width:150px;
+        height:50px;
+        border:1px solid #d3d3d3;}
+        // position:fixed}
+
+
+

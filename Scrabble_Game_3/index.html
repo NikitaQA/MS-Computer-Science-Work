@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Patil Nikita Vilas, ID=12541
+Subject: CS557B_HW4_Summer_2015
+Author: Milind
+Filename: index.html
+Date and Time: Aug 9, 2015 10:26:00 PM
+Project Name: CS557B_HW4_Nikita_Patil_12541
+-->
+<html>
+    <head>
+        <title>Scrabble Mobile Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="jquery.mobile-1.4.2.min.css" />
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="code.js"></script>
+        <script src="cordova.js"></script>
+    </head>
+    <body>
+
+        <div data-role="page" id="homepage" data-theme="a">
+            <div data-role="header" data-position="fixed">
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <h3><b>Instructions</b></h3>
+                <P>Arrange the letters to form words.<br> Words must be 5 letters long.</p> 
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+            </div> 
+        </div>  
+
+
+        <div data-role="page" id="regpage" data-theme="a">
+            <div data-role="header" data-position="fixed">               
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <form data-ajax=”false” method="post" action="">
+                    <div class="ui-field-contain">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="fn" data-clear-btn="true">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="ln" data-clear-btn="true">
+
+                        <label for="username">UserName</label>
+                        <input type="text" name="username" id="un" data-clear-btn="true">
+
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="pwd" data-clear-btn="true">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your email.." data-clear-btn="true">
+
+                        <fieldset data-role="controlgroup">
+                            <legend>Gender:</legend>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female">	
+                        </fieldset> 
+                        <br>
+
+                        <input type="button" data-icon="camera" value="Take a picture" id="pic">
+                       <!-- <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>-->
+                       <div class="ui-content">
+                        <img  id="myImage" src="" style="width:128px;height:128px;">
+                        </div>
+                        <br>
+
+                        <div data-role="main" class="ui-content">
+                            <a href="#regpage" class="ui-btn ui-corner-all" id="submit">Submit</a>
+                        </div>
+
+                        <!--  <input type="submit" value="Submit" data-inline="true" id="submit"> -->
+                        <input type="reset" value="Cancel">                  
+
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+            </div>      
+        </div>              
+
+
+        <div data-role="page" id="loginpage" data-theme="a">
+            <div data-role="header" data-position="fixed">
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <form method="post" action="">
+                    <div class="ui-field-contain">
+
+                        <label for="username">UserName</label>
+                        <input type="text" name="username" id="unl" data-clear-btn="true">
+
+                        <label for="password">Password</label>
+                        <input type="text" name="password" id="pwdl" data-clear-btn="true">
+                        <br><br>
+
+                        <a href="#gamepage" class="ui-btn ui-btn-inline ui-corner-all" >Submit</a>
+                        <!--<input type="submit" value="Submit" data-inline="true" id="submitl">-->
+                        <input type="reset" value="Cancle" data-inline="true">                    
+
+                    </div>
+                </form>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+            </div> 
+        </div>      
+
+
+        <div data-role="page" id="gamepage" data-theme="a">
+            <div data-role="header" data-position="fixed">
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <form method="post" action="">
+                    <div class="ui-field-contain">
+                        <br>
+                       <!-- <div class = "muldiv"> -->
+                        <div id="mydiv1"></div>
+                        <div id="mydiv2"></div>
+                        <div id="mydiv3"></div>
+                        <div id="mydiv4"></div>
+                        <div id="mydiv5"></div>
+                      <!--  </div> -->
+                                        
+                        <br><br>
+
+                        <label for="answer">Type your answer: </label>
+                        <input type="text" name="answer" id="ans" data-clear-btn="true">
+
+                        <br>
+
+                        <div id="timdiv"><span id= "timer"></span></div>
+
+                        <br>
+
+                      <!-- <input type="submit" value="Submit" id="submitg">-->
+                       <!--  <input type="reset" value="New Game" > -->
+                        <a href="#gamepage" class="ui-btn ui-corner-all" id="submitg">Submit</a> 
+                        <br>
+                        <a href="#gamepage" class="ui-btn ui-btn-inline ui-corner-all" id="nw">New Game</a>
+                        <a href="#loginpage" class="ui-btn ui-btn-inline ui-corner-all" >Quit Game</a>
+
+
+                    </div>
+
+                    <div data-role="footer" data-position="fixed">
+                        <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+                    </div> 
+            </div> 
+        </div>
+
+
+        <div data-role="page" id="logpage" data-theme="a">
+            <div data-role="header" data-position="fixed">
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div id="categories"></div>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+            </div> 
+        </div>      
+
+
+        <div data-role="page" id="chartpage" data-theme="a">
+            <div data-role="header" data-position="fixed">
+                <img src="sc.png" id="image" alt="Scrabble logo"/>
+                <div data-role="navbar" data-position="fixed">
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#regpage">Register</a></li>
+                        <li><a href="#loginpage">Login</a></li>
+                        <li><a href="#gamepage">Games</a></li>
+                        <li><a href="#logpage">Logs</a></li>
+                        <li><a href="#chartpage">Charts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <canvas id="can2" ></canvas>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; 2015 NPU, All Rights Are Reserved. </h1>
+            </div> 
+        </div>              
+    </body>
+</html>
 
