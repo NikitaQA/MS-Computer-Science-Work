@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Nikita Vilas Patil, ID=12541
+Subject: CS557B_HW3_Summer_2015
+Author: Milind
+Filename: games.html
+Date and Time: Jul 27, 2015 2:39:46 PM
+Project Name: CS557B_HW3_Nikita_Patil_12541
+-->
+<html>
+
+    <head>
+
+        <title>Game Application</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="deskLayout.css" media="all and (min-width:481px)" />
+
+        <link rel="stylesheet" type="text/css" href="mbLayout.css" media="all and (max-width:480px) and (orientation:portrait)" />
+
+    </head>
+
+    <body onload="game()">
+
+        <script language="JavaScript" src="jsp/Ad.js">           
+
+
+        </script>
+
+
+        <header>
+
+            <img src="img/image6.png" alt="logo" style="width:1200px;height:120px">
+
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="http://localhost:8080/index.html" >Home</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/register.html" >Register</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/games.html">Games</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/logs.html" >Logs</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/charts.html" >Charts</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/login.html">Login</a> &nbsp;</li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1><b>Player: </b></h1>  
+
+
+            <form name="gameForm" id="game"> <!-- action="postGameData" method="post"> -->
+
+                <div class="div1">
+                <div data-drop-target="true"><div id="div4" draggable="true"></div></div>
+                <div data-drop-target="true"><div id="div5" draggable="true"></div></div>
+                <div data-drop-target="true"><div id="div6" draggable="true"></div></div>
+                <div data-drop-target="true"><div id="div7" draggable="true"></div></div>
+                <div data-drop-target="true"><div id="div8" draggable="true"></div></div>
+                </div>
+                <br><br>
+
+                <div class="div2">
+                <div data-drop-target="true"> </div>
+                <div data-drop-target="true"> </div>
+                <div data-drop-target="true"> </div>
+                <div data-drop-target="true"> </div>
+                <div data-drop-target="true"> </div>
+                </div>
+                <br><br><br>
+
+                <input type="button" value="New Game"  id="New" name = "nw" onclick="newGame()"/>&nbsp;
+                <input type="button" value="Quit Game" id="Quit" name = "qt" onclick="quit();"/>
+
+                <br><br>
+
+                <div id="div3"><span id="timer"></span></div>
+
+            </form>
+
+        </article>
+
+        <aside id="myAside">
+            <img id="1" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" style="width:450px;height:400px">
+            <<!--   <img id="2" src="img/candy_crush.jpg" style="width:450px;height:400px">  -->
+
+
+        </aside>
+
+        <footer>
+            &COPY; 2015 Northwestern Polytechnic University, All Rights Are Reserved. 
+        </footer>
+
+
+    </body>
+
+</html>
+
+

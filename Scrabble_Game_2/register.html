@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Nikita Vilas Patil, ID=12541
+Subject: CS557B_HW3_Summer_2015
+Author: Milind
+Filename: register.html
+Date and Time: Jul 27, 2015 2:42:21 PM
+Project Name: CS557B_HW3_Nikita_Patil_12541
+-->
+<html>
+    
+    <head>
+    
+        <title>Game Application</title>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="deskLayout.css" media="all and (min-width:481px)" />
+
+        <link rel="stylesheet" type="text/css" href="mbLayout.css" media="all and (max-width:480px) and (orientation:portrait)" />
+        
+        
+    </head>
+    
+    <body>
+        
+        <script language="JavaScript" src="jsp/Ad.js">
+                           
+        </script>
+            
+    
+        <header>
+        
+            <img src="img/image6.png" alt="logo" style="width:1200px;height:120px">
+        
+        </header>
+        
+        <nav>
+            <ul>
+                <li> <a href="http://localhost:8080/index.html" >Home</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/register.html" >Register</a> &nbsp;</li>
+                <li> <a href="" onclick="loginAlert()" >Games</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/logs.html" >Logs</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/charts.html" >Charts</a> &nbsp;</li>
+                <li> <a href="http://localhost:8080/login.html">Login</a> &nbsp;</li>
+            </ul>
+        </nav>
+        
+        <article>
+            <h1><b>Your Information</b></h1>
+            
+            <form name="registerForm" id="reg" action="postRegUser" method="post">          
+                
+                    <label> First Name : </label> <input type="text" name ="fn" id="f1"/><br> <br>  
+                    <label> Last Name : </label> <input type="text"  name ="ln" id="l1"/><br><br>
+                    <label> Username : </label> <input type="text"   name ="un" id="u1"/><br><br>
+                    <label> Password : </label> <input type="text"   name ="pw" id="p1"/><br><br>
+                    <label> Email_Id : </label> <input type="text"   name ="em" id="e1"/><br><br>
+                    <label> Gender   : </label> 
+                    <input type="radio" name="gender" value="Male" checked id="gm"/>Male &nbsp;
+                    <input type="radio" name="gender" value="Female" id="gf"/>Female <br><br> 
+                    <input type="button" value="Submit" id="s1" onclick="checkEmail();"/>&nbsp;
+                    <input type="button" value="Cancle" id="c1" onclick="cancle();clearFields()"/>        
+                                                                  
+            </form>
+            
+        </article>
+        
+        <aside id="myAside">
+            <img id="1" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" style="width:450px;height:400px">
+         <<!--   <img id="2" src="img/candy_crush.jpg" style="width:450px;height:400px">  -->
+            
+            
+        </aside>
+        
+        <footer>
+             &COPY; 2015 Northwestern Polytechnic University, All Rights Are Reserved.
+        </footer>
+            
+    
+    </body>
+
+</html>

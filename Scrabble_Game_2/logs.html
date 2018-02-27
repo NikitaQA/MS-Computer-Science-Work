@@ -3,37 +3,38 @@
 Student Info: Name=Nikita Vilas Patil, ID=12541
 Subject: CS557B_HW3_Summer_2015
 Author: Milind
-Filename: index.html
-Date and Time: Jul 27, 2015 2:40:44 PM
+Filename: logs.html
+Date and Time: Jul 27, 2015 2:41:46 PM
 Project Name: CS557B_HW3_Nikita_Patil_12541
 -->
 <html>
-
+    
     <head>
-
+    
         <title>Game Application</title>
-
+        
         <meta charset="UTF-8">
-
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link rel="stylesheet" type="text/css" href="deskLayout.css" media="all and (min-width:481px)" />
 
         <link rel="stylesheet" type="text/css" href="mbLayout.css" media="all and (max-width:480px) and (orientation:portrait)" />
-
     </head>
-
-    <body>
-
-        <script language="JavaScript" src="jsp/Ad.js"> </script>
-
-
+    
+    <body onload="displayTable()">
+        
+        <script language="JavaScript" src="jsp/Ad.js">
+                              
+        </script>
+            
+    
         <header>
-
-            <img id="1" src="img/image6.png" alt="logo" style="width:1200px;height:100px">
-
+        
+            <img src="img/image6.png" alt="logo" style="width:1200px;height:120px">
+        
         </header>
-
+        
         <nav>
             <ul>
                 <li> <a href="http://localhost:8080/index.html" >Home</a> &nbsp;</li>
@@ -44,23 +45,27 @@ Project Name: CS557B_HW3_Nikita_Patil_12541
                 <li> <a href="http://localhost:8080/login.html">Login</a> &nbsp;</li>
             </ul>
         </nav>
-
-        <article>            
-            <h1><b><br>Instructions</b></h1>
-            <p> Arrange the letters to form words.<br> Words must be 5 letters long. <br> Use mouse to drag
-                the letters. </p> 
+        
+        <article id="art1">
+            <h1><b>Player Activities Page</b></h1>
+         <input type="button" value="Submit" id="s3" onclick="subChar()"/>&nbsp;
+         <input type="button" value="Cancle" id="c3" onclick="cancle()"/>        
         </article>
-
-        <aside id="myAside">            
-            <img id="2" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" alt="advertisement" style="width:450px;height:400px">
+        
+        <aside id="myAside">
+            <img id="1" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" style="width:450px;height:400px">
+         <<!--   <img id="2" src="img/candy_crush.jpg" style="width:450px;height:400px">  -->
+            
+            
         </aside>
-
+        
         <footer>
-            &COPY; 2015 Northwestern Polytechnic University, All Rights Are Reserved. 
+              &COPY; 2015 Northwestern Polytechnic University, All Rights Are Reserved. 
         </footer>
-
-
+            
+    
     </body>
 
 </html>
+
 
