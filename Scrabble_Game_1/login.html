@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+Student Info: Name=Nikita Vilas Patil, ID=12541
+Subject: CS557B_HW2_Summer_2015
+Author: Milind
+Filename: login.html
+Date and Time: Jun 24, 2015 10:44:47 PM
+Project Name: CS557_HW2_Nikita_Patil_12541
+-->
+
+<html>
+    
+    <head>
+    
+        <title>Game Application</title>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="deskLayout.css" media="all and (min-width:481px)" />
+
+        <link rel="stylesheet" type="text/css" href="mbLayout.css" media="all and (max-width:480px) and (orientation:portrait)" />
+               
+    
+    </head>
+    
+    <body>
+        
+        <script language="JavaScript" src="jsp/Ad.js">
+                              
+        </script>
+            
+    
+        <header>
+        
+            <img src="img/image6.png" alt="logo" style="width:1200px;height:120px">
+        
+        </header>
+        
+        <nav>
+            <ul>
+                <li> <a href="http://localhost:8383/CS557_HW2_Nikita%20Patil_12541/index.html" >Home</a> &nbsp;</li>
+                <li> <a href="http://localhost:8383/CS557_HW2_Nikita%20Patil_12541/register.html" >Register</a> &nbsp;</li>
+                <li> <a href="" onclick="loginAlert()">Games</a> &nbsp;</li>
+                <li> <a href="http://localhost:8383/CS557_HW2_Nikita%20Patil_12541/logs.html" >Logs</a> &nbsp;</li>
+                <li> <a href="http://localhost:8383/CS557_HW2_Nikita%20Patil_12541/charts.html" >Charts</a> &nbsp;</li>
+                <li> <a href="http://localhost:8383/CS557_HW2_Nikita%20Patil_12541/login.html">Login</a> &nbsp;</li>
+            </ul>
+        </nav>
+        
+        <article>
+            <h1><b>Login Page</b></h1><br>
+            
+            <form name="loginForm">
+                
+                <label> Username: &nbsp;</label> <input type="text" id="u2"/><br><br>
+                <label> Password: &nbsp;</label> <input type="text" id="p2"/><br><br><br>
+                
+                <input type="button" value="Submit" id="s1" onclick="loginUser();clearLogin()"/> &nbsp;
+                <input type="button" value="Cancle" id="c1" onclick="clearLogin()"/> 
+                
+                
+            </form>
+            
+        </article>
+        
+        <aside id="myAside">
+            <img id="1" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" style="width:450px;height:400px">
+         <<!--   <img id="2" src="img/candy_crush.jpg" style="width:450px;height:400px">  -->
+            
+            
+        </aside>
+        
+        <footer>
+              &COPY; 2015 Northwestern Polytechnic University, All Rights Are Reserved. 
+        </footer>
+            
+    
+    </body>
+
+</html>
+
+

@@ -1,0 +1,182 @@
+/*
+Student Info: Name=Nikita Vilas Patil, ID=12541
+Subject: CS557B_HW2_Summer_2015
+Author: Milind
+Filename: mbLayout.css
+Date and Time: Jun 26, 2015 1:02:43 PM
+Project Name: CS557_HW2_Nikita_Patil_12541
+*/
+/* 
+    Created on : Jun 26, 2015, 1:02:43 PM
+    Author     : Milind
+*/
+
+@media screen and (max-width:480px)
+{
+    body{background-color:black;
+         margin: 0;
+         padding: 0; 
+         padding-bottom:60px;
+         border:3px dashed yellow;}
+
+    header{display: none;}
+
+    nav{max-height: 200px;
+        max-width: 100%;}
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        font-size: 1.00em;
+        list-style-type: none;}
+
+    a{color:limegreen;}
+
+    article{
+        width: 95%;
+        height:300px;
+        display: block;
+        margin-bottom:5%;
+        margin-left: 2%;
+        background-color:forestgreen;
+        font-size:1.00em;
+        text-align: center;}       
+
+    h1 p{text-align: center;
+         font-size: 0.50em;}
+
+    img > aside {
+        display:block;
+        vertical-align: middle;
+        width:95%;
+        height:80px;
+        margin-left:2%;}
+
+    img{ max-width:95%;
+         max-height:100px;
+         margin-left:2%;}
+
+    footer{
+        width:95%;
+        height:20px;
+        background-color:darkgreen;
+        font-size:0.60em;
+        min-width: 90%;
+        position:absolute;
+        bottom: 0;
+        margin-left:2%;}
+
+    form{text-align: center;}
+
+    table{margin-left: 5%;
+          border:1px solid black;
+          border-collapse: collapse;
+          font-size:0.70em;
+    }
+
+    th,td{border:1px solid black;
+          border-collapse: collapse;
+          padding:1px;
+    }
+    #cancle1 #submit1{text-align:center;
+                      margin-left: 40%; 
+    }
+
+    #div1{display:inline-block;
+          background-color: white;
+          width:10px;
+          height:10px;
+          padding:10px;
+          border:1px solid #aaaaaa;}
+
+    #div2{display:inline-block;
+          width:10px;
+          height:10px;
+          padding:10px;
+          border:1px solid #aaaaaa;}
+    
+    #div3{display:inline-block;
+    //  float:right;
+      position:fixed;
+      width:100px;
+      height:10px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+      font-size:0.60em;}
+    
+    #div4{display:inline-block;
+      background-color: white;
+      width:5px;
+      height:5px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+
+}
+
+#div5{display:inline-block;
+      background-color: white;
+      width:5px;
+      height:5px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+
+}
+
+#div6{display:inline-block;
+      background-color: white;
+      width:5px;
+      height:5px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+
+}
+
+#div7{display:inline-block;
+      background-color: white;
+      width:5px;
+      height:5px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+
+}
+
+#div8{display:inline-block;
+      background-color: white;
+      width:5px;
+      height:5px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+
+}
+
+[data-drop-target]
+{
+      display:inline-block;
+     // background-color: white;
+      width:20px;
+      height:20px;
+      padding:10px;
+      border:1px solid #aaaaaa;
+      
+}
+
+canvas{
+    
+    width:150px;
+    height:150px;
+}
+
+#s3{
+    position: fixed;
+    bottom: 180px;
+    right: 180px;
+}
+
+#c3{
+    position: fixed;
+    bottom: 180px;
+    right: 100px;}
+
+
+
+}

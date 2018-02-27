@@ -3,8 +3,8 @@
 Student Info: Name=Nikita Vilas Patil, ID=12541
 Subject: CS557B_HW2_Summer_2015
 Author: Milind
-Filename: index.html
-Date and Time: Jun 24, 2015 5:26:13 PM
+Filename: charts.html
+Date and Time: Jul 4, 2015 12:42:28 AM
 Project Name: CS557_HW2_Nikita_Patil_12541
 -->
 <html>
@@ -23,7 +23,7 @@ Project Name: CS557_HW2_Nikita_Patil_12541
 
     </head>
 
-    <body>
+    <body onload="drawChart()">
 
         <script language="JavaScript" src="jsp/Ad.js"> </script>
 
@@ -45,11 +45,12 @@ Project Name: CS557_HW2_Nikita_Patil_12541
             </ul>
         </nav>
 
-        <article>            
-            <h1><b><br>Instructions</b></h1>
-            <p> Arrange the letters to form words.<br> Words must be 5 letters long. <br> Use mouse to drag
-                the letters. </p> 
-        </article>
+       <article id="art2">    
+           <br><br>
+                          
+           <canvas id="can2" ></canvas>
+       
+       </article> 
 
         <aside id="myAside">            
             <img id="2" onload="setInterval('changeImage()', 30000);" src="img/temple_run.jpg" alt="advertisement" style="width:450px;height:400px">
