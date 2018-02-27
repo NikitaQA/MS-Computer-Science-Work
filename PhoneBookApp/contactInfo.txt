@@ -1,3 +1,0 @@
-John	Santa Clara	4083334546
-Peter	San Jose	4081113435
-Lily	Fremont	4082257982
